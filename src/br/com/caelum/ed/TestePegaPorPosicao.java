@@ -8,7 +8,7 @@ public class TestePegaPorPosicao {
         Aluno a2 = new Aluno();
 
         a1.setNome("Rafael");
-        a1.setNome("Paulo");
+        a2.setNome("Paulo");
 
         Vetor lista = new Vetor();
 

@@ -17,7 +17,8 @@ public class Vetor {
     }
 
     public Aluno pega(int posicao){
-        return null;
+
+        return this.alunos[posicao];
     }
 
     public void remove(int posicao){
@@ -25,17 +26,42 @@ public class Vetor {
     }
 
     public boolean contem(Aluno aluno){
+
+        for (int i = 0; i < this.totalDeAlunos; i++) {
+            if (aluno.equals(this.alunos[i])){
+                return true;
+            }
+        }
+
         return false;
     }
 
     public int tamanho(){
-        return 0;
+
+        return this.totalDeAlunos;
+    }
+
+    private boolean posicaoOcupada(int posicao) {
+        return posicao >= 0 && posicao < this.totalDeAlunos;
     }
 
     @Override
     public String toString() {
-        return "Vetor{" +
-                "alunos=" + Arrays.toString(alunos) +
-                '}';
+        if (this.totalDeAlunos == 0) {
+            return "[]";
+        }
+
+        StringBuilder builder = new StringBuilder();
+        builder.append("[");
+
+        for (int i = 0; i < this.totalDeAlunos - 1; i++) {
+            builder.append(this.alunos[i]);
+            builder.append(", ");
+        }
+
+        builder.append(this.alunos[this.totalDeAlunos - 1]);
+        builder.append("]");
+
+        return builder.toString();
     }
 }

@@ -21,7 +21,7 @@ public class TesteContemAluno {
         Aluno aluno = new Aluno();
         aluno.setNome("Ana");
 
-        System.out.println(aluno);
+        System.out.println(lista.contem(aluno));
 
     }
 
