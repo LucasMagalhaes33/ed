@@ -16,7 +16,7 @@ public class TestePegaPorPosicao {
         lista.adiciona(a2);
 
         Aluno aluno1 = lista.pega(0);
-        Aluno aluno2 = lista.pega(1);
+        Aluno aluno2 = lista.pega(2 );
 
         System.out.println(aluno1);
         System.out.println(aluno2);
