@@ -10,18 +10,18 @@ public class TesteContemAluno {
         a1.setNome("Rafael");
         a2.setNome("Paulo");
 
-        Vetor lista = new Vetor();
+        VetorObjetos lista = new VetorObjetos(2);
 
         lista.adiciona(a1);
         lista.adiciona(a2);
 
-        System.out.println(lista.contem(a1));
-        System.out.println(lista.contem(a2));
+        System.out.println(lista.busca(a1));
+        System.out.println(lista.busca(a2));
 
         Aluno aluno = new Aluno();
         aluno.setNome("Ana");
 
-        System.out.println(lista.contem(aluno));
+        System.out.println(lista.busca(aluno));
 
     }
 

@@ -10,7 +10,7 @@ public class TesteTamanhoLista {
         a1.setNome("Rafael");
         a1.setNome("Paulo");
 
-        Vetor lista = new Vetor();
+        VetorObjetos lista = new VetorObjetos(3);
 
         lista.adiciona(a1);
         lista.adiciona(a2);

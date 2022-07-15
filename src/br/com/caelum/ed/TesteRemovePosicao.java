@@ -9,7 +9,7 @@ public class TesteRemovePosicao {
         a1.setNome("Rafael");
         a2.setNome("Paulo");
 
-        Vetor lista = new Vetor();
+        VetorObjetos lista = new VetorObjetos(3);
 
         lista.adiciona(a1);
         lista.adiciona(a2);
