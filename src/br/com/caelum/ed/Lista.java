@@ -66,6 +66,9 @@ public class Lista<T> {
         }
         return -1;
     }
+    public boolean contem(T elemento){
+        return busca(elemento) > -1;
+    }
 
     // B D E F F -> posição a ser removida é 1 (G)
     // 0 1 2 3 4 -> tamanho é 5
