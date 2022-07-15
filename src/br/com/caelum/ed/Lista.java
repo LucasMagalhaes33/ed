@@ -66,6 +66,16 @@ public class Lista<T> {
         }
         return -1;
     }
+
+    public int ultimoItem(T elemento){
+        for (int i = this.tamanho-1; i>=0; i--){
+            if (this.elementos[i].equals(elemento)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public boolean contem(T elemento){
         return busca(elemento) > -1;
     }
@@ -83,6 +93,14 @@ public class Lista<T> {
             this.elementos[i] = this.elementos[i+1];
         }
         this.tamanho--;
+    }
+
+    public void remove(T elemento){
+        int pos = this.busca(elemento);
+
+        if (pos > -1) {
+            this.remove(pos);
+        }
     }
 
     public int tamanho(){
